@@ -23,7 +23,7 @@ function MeetupDetails(props) {
 
 export async function getStaticPaths() {
     //fetch data from db
-    const client = new MongoClient('mongodb+srv://sadvenus:chgbWxmucUlkwCxt@cluster0.ml4ovdd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+    const client = new MongoClient('mongodb+srv://<name>:<password>@cluster0.ml4ovdd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
     await client.connect();
 
     const dbName = "myFirstDatabase";
@@ -48,7 +48,7 @@ export async function getStaticProps(context) {
 
     //fetch data for single meetup
     //fetch data from db
-    const client = new MongoClient('mongodb+srv://sadvenus:chgbWxmucUlkwCxt@cluster0.ml4ovdd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+    const client = new MongoClient('mongodb+srv://<name>:<password>@cluster0.ml4ovdd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
     await client.connect();
 
     const dbName = "myFirstDatabase";
