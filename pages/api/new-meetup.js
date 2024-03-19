@@ -9,7 +9,7 @@ async function handler(req, res) {
         const { title, image, address, description } = data;
 
         try {
-            const client = new MongoClient('mongodb+srv://sadvenus:chgbWxmucUlkwCxt@cluster0.ml4ovdd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+            const client = new MongoClient('mongodb+srv://<name>:<password>@cluster0.ml4ovdd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
             await client.connect();
 
             const dbName = "myFirstDatabase";
