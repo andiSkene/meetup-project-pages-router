@@ -29,7 +29,7 @@ function HomePage(props) {
  */
 export async function getStaticProps() {
     //fetch data from db
-    const client = new MongoClient('mongodb+srv://sadvenus:chgbWxmucUlkwCxt@cluster0.ml4ovdd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+    const client = new MongoClient('mongodb+srv://<name>:<password>@cluster0.ml4ovdd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
     await client.connect();
 
     const dbName = "myFirstDatabase";
